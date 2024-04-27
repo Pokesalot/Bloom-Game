@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="tools.js"></script>
+    </head>
+    <body>
+        <div id="setupDiv">
+            Welcome to the index! Please enter your player's names! <br><br>
+            <input type="text" name="PlayerNames" id="player_names" onkeydown="AddName(this)">
+            <input type="button" value="Start Game!" onclick="StartGame()">
+        </div>
+
+        <div id="playDiv" hidden="true" class="img-container">
+            <h2 style="text-align: center;" id="playerTitle"></h2>
+
+            <div class="diceContainer">
+                <div style="background-color: pink;"></div>
+            </div>
+            
+            
+
+        </div>
+        
+    </body>
+</html>
