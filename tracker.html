@@ -13,6 +13,60 @@
 
         <div id="playDiv" hidden="true" style="margin: auto; align-items: center; width: 100wv; height: 90vh;">
             
+            <div id = "curDicePlayer">
+
+            </div>
+            
+            <div style="background-color: blue;" onclick="pickDie(this)" id="blueDicePick">
+                <h1>B</h1>
+            </div>
+            <div style="background-color: orange;" onclick="pickDie(this)" id="orangeDicePick">
+                <h1>B</h1>
+            </div>
+            <div style="background-color: pink;" onclick="pickDie(this)" id="pinkDicePick">
+                <h1>B</h1>
+            </div>
+            <div style="background-color: purple;" onclick="pickDie(this)" id="purpleDicePick">
+                <h1>B</h1>
+            </div>
+            <div style="background-color: white;" onclick="pickDie(this)" id="whiteDicePick">
+                <h1>B</h1>
+            </div>
+            <div style="background-color: yellow;" onclick="pickDie(this)" id="yellowDicePick">
+                <h1>B</h1>
+            </div>
+            <div style="background-color: black; color: white;" hidden="true" onclick="endGame()" id="endGameDiv">
+                <h1>End</h1>
+            </div>
+
+            <div>
+                Color points!
+                <div>
+                    Blue!
+                    <button onclick="score('blue')">(+)</button>
+                </div>
+                <div>
+                    Orange!
+                    <button onclick="score('orange')">(+)</button>
+                </div>
+                <div>
+                    Pink!
+                    <button onclick="score('pink')">(+)</button>
+                </div>
+                <div>
+                    Purple!
+                    <button onclick="score('purple')">(+)</button>
+                </div>
+                <div>
+                    Yellow!
+                    <button onclick="score('yellow')">(+)</button>
+                </div>
+                <div>
+                    Bed!
+                    <button onclick="score('bed')">(+)</button>
+                </div>
+            </div>
+
             <div class="grid-container">
                 <div class="item1" id="nextPlayer">Header</div>
                 <div class="item2">Menu</div>
