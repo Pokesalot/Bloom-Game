@@ -42,6 +42,7 @@ function StartGame(){
     tracker.dice = {};
 
     RollDice();
+    $("playDiv").style.display = "flex";
     RenderGame();
 }
 

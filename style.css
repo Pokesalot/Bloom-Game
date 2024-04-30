@@ -1,16 +1,28 @@
-.diceContainer {
-    height: 25vh; /* Set the height of the container to 15% of the viewport height */
-    width: 15vw; /* Set the width of the container to 15% of the viewport width */
-    overflow: hidden; /* Hide any overflowing content */
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Three columns with equal width */
-    grid-gap: 10px; /* Adjust as needed */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: second; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'
+    'menu second second second second second';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
 }
 
-.diceContainer div {
-    border: 1px solid black; /* Just for visualization */
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
-    object-fit: contain; /* Scale the image down while maintaining aspect ratio */
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }

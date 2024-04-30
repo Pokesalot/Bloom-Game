@@ -5,20 +5,22 @@
         <script src="tools.js"></script>
     </head>
     <body>
-        <div id="setupDiv">
+        <div id="setupDiv" style="display: flex; width: 85wv; height: 85hv; align-items: center; justify-content: center;">
             Welcome to the index! Please enter your player's names! <br><br>
             <input type="text" name="PlayerNames" id="player_names" onkeydown="AddName(this)">
             <input type="button" value="Start Game!" onclick="StartGame()">
         </div>
 
-        <div id="playDiv" hidden="true" class="img-container">
-            <h2 style="text-align: center;" id="playerTitle"></h2>
-
-            <div class="diceContainer">
-                <div style="background-color: pink;"></div>
+        <div id="playDiv" hidden="true" style="margin: auto; align-items: center; width: 100wv; height: 90vh;">
+            
+            <div class="grid-container">
+                <div class="item1" id="nextPlayer">Header</div>
+                <div class="item2">Menu</div>
+                <div class="item3">Main</div>  
+                <div class="item4">Right</div>
+                <div class="item5">Footer</div>
+                <div class="item6">Second</div>
             </div>
-            
-            
 
         </div>
         
